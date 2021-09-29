@@ -1,0 +1,84 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body > div {
+    display: flex;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.container__main .commands {
+    justify-content: space-around;
+    background-color: rgba(255, 0, 0, 0.294);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.commands .commands__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 55%;
+}
+
+.commands button {
+    padding: 15px 15px;
+    background-color: azure;
+    border-radius: 2px;
+    border: none;
+}
+
+.commands input[type=color] {
+    border: none;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    
+}
+
+.commands button:hover {
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+}
+
+
+.container {
+
+    margin: 0 auto;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    min-width: 514px;
+    max-width: 514px;
+    max-height: 514px;
+    min-height: 514px;
+}
+
+@media (max-width: 800px) {
+    .commands button {
+        padding: 5px 10px;
+        background-color: azure;
+        border-radius: 2px;
+        border: none;
+    }
+
+    .commands {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .container__main {
+        flex-direction: column;
+    }
+}
